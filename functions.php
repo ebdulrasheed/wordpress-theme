@@ -7,5 +7,10 @@
     wp_enqueue_style('main_styles', get_stylesheet_uri(), NULL, microtime());
  }
 
+function features() {
+    add_theme_support("title-tag");
+}
+
 add_action('wp_enqueue_scripts', 'loadHeader');
+add_action('after_setup_theme', 'features');
 ?>
