@@ -1,7 +1,6 @@
 <?php
-// $posts_Query = new WP_Query(array(
-//     'post_type' => 'post',
-// ));
+
+get_header();
 
 while (have_posts()) :
 the_post();
@@ -11,4 +10,7 @@ the_post();
 <p> <?php the_content();
     ?></p>
 <hr>
-<?php endwhile;?>
+
+<?php endwhile;
+get_footer();
+?>
