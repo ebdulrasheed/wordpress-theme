@@ -9,6 +9,9 @@ function loadHeader () {
 
 function features() {
     add_theme_support("title-tag");
+
+    register_nav_menu("navMenuPrimary", "Primary Nav Menu");
+    register_nav_menu("navMenuFooter", "Footer Nav Menu");
 }
 
 add_action('wp_enqueue_scripts', 'loadHeader');
