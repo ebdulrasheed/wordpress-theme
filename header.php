@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes() ?>>
 
 <head>
-    <?php
-    wp_head(); ?>
+  <meta charset="<?php bloginfo("charset") ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <?php
+  wp_head(); ?>
 </head>
-<body>
-<header class="site-header">
+
+<body <?php body_class();?>>
+  <header class="site-header">
     <div class="container">
       <h1 class="school-logo-text float-left"><a href="<?php echo site_url() ?>"><strong>Fictional</strong> University</a></h1>
       <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
